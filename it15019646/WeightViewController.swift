@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  WeightViewController.swift
 //  it15019646
 //
 //  Created by Sameera Madushan on 8/7/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class WeightViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

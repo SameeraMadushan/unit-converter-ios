@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420B7E6621233BF9004BA1CE /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E6521233BF9004BA1CE /* TemperatureViewController.swift */; };
+		420B7E6821233C36004BA1CE /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E6721233C36004BA1CE /* SpeedViewController.swift */; };
+		420B7E6B21233C90004BA1CE /* WeightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E6A21233C90004BA1CE /* WeightController.swift */; };
+		420B7E6D21233CA8004BA1CE /* TemperatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E6C21233CA8004BA1CE /* TemperatureController.swift */; };
+		420B7E6F21233CB9004BA1CE /* DistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E6E21233CB9004BA1CE /* DistanceController.swift */; };
+		420B7E7121233CC8004BA1CE /* SpeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B7E7021233CC8004BA1CE /* SpeedController.swift */; };
 		425E6B21211A2A8B00337881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E6B20211A2A8B00337881 /* AppDelegate.swift */; };
-		425E6B23211A2A8B00337881 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E6B22211A2A8B00337881 /* FirstViewController.swift */; };
-		425E6B25211A2A8B00337881 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E6B24211A2A8B00337881 /* SecondViewController.swift */; };
+		425E6B23211A2A8B00337881 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E6B22211A2A8B00337881 /* WeightViewController.swift */; };
+		425E6B25211A2A8B00337881 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E6B24211A2A8B00337881 /* DistanceViewController.swift */; };
 		425E6B28211A2A8B00337881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425E6B26211A2A8B00337881 /* Main.storyboard */; };
 		425E6B2A211A2A8B00337881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425E6B29211A2A8B00337881 /* Assets.xcassets */; };
 		425E6B2D211A2A8B00337881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425E6B2B211A2A8B00337881 /* LaunchScreen.storyboard */; };
@@ -35,10 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		420B7E6521233BF9004BA1CE /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		420B7E6721233C36004BA1CE /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
+		420B7E6A21233C90004BA1CE /* WeightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightController.swift; sourceTree = "<group>"; };
+		420B7E6C21233CA8004BA1CE /* TemperatureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureController.swift; sourceTree = "<group>"; };
+		420B7E6E21233CB9004BA1CE /* DistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceController.swift; sourceTree = "<group>"; };
+		420B7E7021233CC8004BA1CE /* SpeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedController.swift; sourceTree = "<group>"; };
 		425E6B1D211A2A8B00337881 /* it15019646.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = it15019646.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425E6B20211A2A8B00337881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		425E6B22211A2A8B00337881 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		425E6B24211A2A8B00337881 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		425E6B22211A2A8B00337881 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		425E6B24211A2A8B00337881 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		425E6B27211A2A8B00337881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425E6B29211A2A8B00337881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425E6B2C211A2A8B00337881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420B7E6921233C62004BA1CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				420B7E6A21233C90004BA1CE /* WeightController.swift */,
+				420B7E6C21233CA8004BA1CE /* TemperatureController.swift */,
+				420B7E6E21233CB9004BA1CE /* DistanceController.swift */,
+				420B7E7021233CC8004BA1CE /* SpeedController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		425E6B14211A2A8B00337881 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +122,16 @@
 		425E6B1F211A2A8B00337881 /* it15019646 */ = {
 			isa = PBXGroup;
 			children = (
+				420B7E6921233C62004BA1CE /* Controllers */,
 				425E6B20211A2A8B00337881 /* AppDelegate.swift */,
-				425E6B22211A2A8B00337881 /* FirstViewController.swift */,
-				425E6B24211A2A8B00337881 /* SecondViewController.swift */,
+				425E6B22211A2A8B00337881 /* WeightViewController.swift */,
+				425E6B24211A2A8B00337881 /* DistanceViewController.swift */,
 				425E6B26211A2A8B00337881 /* Main.storyboard */,
 				425E6B29211A2A8B00337881 /* Assets.xcassets */,
 				425E6B2B211A2A8B00337881 /* LaunchScreen.storyboard */,
 				425E6B2E211A2A8B00337881 /* Info.plist */,
+				420B7E6521233BF9004BA1CE /* TemperatureViewController.swift */,
+				420B7E6721233C36004BA1CE /* SpeedViewController.swift */,
 			);
 			path = it15019646;
 			sourceTree = "<group>";
@@ -262,9 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425E6B25211A2A8B00337881 /* SecondViewController.swift in Sources */,
+				425E6B25211A2A8B00337881 /* DistanceViewController.swift in Sources */,
+				420B7E6D21233CA8004BA1CE /* TemperatureController.swift in Sources */,
+				420B7E6F21233CB9004BA1CE /* DistanceController.swift in Sources */,
+				420B7E6821233C36004BA1CE /* SpeedViewController.swift in Sources */,
 				425E6B21211A2A8B00337881 /* AppDelegate.swift in Sources */,
-				425E6B23211A2A8B00337881 /* FirstViewController.swift in Sources */,
+				420B7E6B21233C90004BA1CE /* WeightController.swift in Sources */,
+				425E6B23211A2A8B00337881 /* WeightViewController.swift in Sources */,
+				420B7E6621233BF9004BA1CE /* TemperatureViewController.swift in Sources */,
+				420B7E7121233CC8004BA1CE /* SpeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
