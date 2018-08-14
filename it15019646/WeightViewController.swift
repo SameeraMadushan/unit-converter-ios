@@ -10,16 +10,18 @@ import UIKit
 
 class WeightViewController: UIViewController {
 
+    @IBOutlet weak var gram: UITextField!
+    @IBOutlet weak var kilogram: UITextField!
+    @IBOutlet weak var pound: UITextField!
+    @IBOutlet weak var ounce: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func gramValueChanged(_ sender: Any) {
+        
     }
-
     
 
 }
