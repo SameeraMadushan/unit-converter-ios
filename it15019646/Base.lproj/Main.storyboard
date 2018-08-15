@@ -193,6 +193,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="celsiusValueChanged:" destination="imM-gM-VzT" eventType="editingChanged" id="Jxz-HJ-gyI"/>
+                                    <action selector="clearOnClick:" destination="imM-gM-VzT" eventType="editingDidBegin" id="zWa-4T-b4B"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-fl-AcA">
                                 <rect key="frame" x="145" y="233" width="196" height="30"/>
@@ -202,6 +206,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="imM-gM-VzT" eventType="editingDidBegin" id="Fml-Br-m0G"/>
+                                    <action selector="fahrenheitValueChanged:" destination="imM-gM-VzT" eventType="editingChanged" id="emD-uV-6ts"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVF-xg-D4j">
                                 <rect key="frame" x="145" y="283" width="196" height="30"/>
@@ -211,6 +219,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="imM-gM-VzT" eventType="editingDidBegin" id="5Cb-03-uwY"/>
+                                    <action selector="kelvinValueChanged:" destination="imM-gM-VzT" eventType="editingChanged" id="qax-94-xUR"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -234,6 +246,11 @@
                         <viewLayoutGuide key="safeArea" id="0U1-Ff-AZJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="q5D-dY-O0a"/>
+                    <connections>
+                        <outlet property="celsius" destination="f2O-Lf-gxU" id="BWH-GX-9SZ"/>
+                        <outlet property="fahrenheit" destination="NdH-fl-AcA" id="wEV-7X-6OM"/>
+                        <outlet property="kelvin" destination="lVF-xg-D4j" id="Odi-IM-hIs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Hg-oD-Qbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -517,11 +534,11 @@
             </objects>
             <point key="canvasLocation" x="-1623" y="-406"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Weight-->
         <scene sceneID="oeF-dF-GjF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="elN-mc-xvy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Weight" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w2S-MW-FhX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -536,11 +553,11 @@
             </objects>
             <point key="canvasLocation" x="-834" y="-779"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Temperature-->
         <scene sceneID="Q4P-HT-ZQq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W8n-R5-cI0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="sWr-9g-1Mt"/>
+                    <tabBarItem key="tabBarItem" title="Temperature" id="sWr-9g-1Mt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0J5-Dc-362">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -555,11 +572,11 @@
             </objects>
             <point key="canvasLocation" x="750" y="-779"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Distance-->
         <scene sceneID="rUT-cK-1Lw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HIB-zm-uyl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Distance" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oau-fE-ed7">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -574,11 +591,11 @@
             </objects>
             <point key="canvasLocation" x="-835.20000000000005" y="0.0"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Speed-->
         <scene sceneID="2l7-tC-zCz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zFZ-rU-Shr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="m7W-dr-NCV"/>
+                    <tabBarItem key="tabBarItem" title="Speed" id="m7W-dr-NCV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YrY-ph-HA5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
