@@ -469,6 +469,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="AWv-H8-VU7" eventType="editingDidBegin" id="wyj-ES-AaJ"/>
+                                    <action selector="meterPerSecValueChanged:" destination="AWv-H8-VU7" eventType="editingChanged" id="60Q-7D-zLi"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LIV-jZ-zJw">
                                 <rect key="frame" x="192" y="233" width="149" height="30"/>
@@ -478,6 +482,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="AWv-H8-VU7" eventType="editingDidBegin" id="Zey-2O-cnH"/>
+                                    <action selector="footPerMinValueChanged:" destination="AWv-H8-VU7" eventType="editingChanged" id="icY-tO-JYC"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-vE-hFM">
                                 <rect key="frame" x="192" y="283" width="149" height="30"/>
@@ -487,6 +495,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="AWv-H8-VU7" eventType="editingDidBegin" id="amh-nV-9wx"/>
+                                    <action selector="kmPerHrValueChanged:" destination="AWv-H8-VU7" eventType="editingChanged" id="zfb-IP-vbN"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Kn-R1z">
                                 <rect key="frame" x="192" y="333" width="149" height="30"/>
@@ -496,6 +508,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="AWv-H8-VU7" eventType="editingDidBegin" id="0qg-0e-qL8"/>
+                                    <action selector="milesPerHrValueChanged:" destination="AWv-H8-VU7" eventType="editingChanged" id="6sc-Af-Eac"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feet per minute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOs-Ys-pUm">
                                 <rect key="frame" x="34" y="238" width="133" height="21"/>
@@ -536,6 +552,12 @@
                         <viewLayoutGuide key="safeArea" id="lsl-QF-Mnq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Speed" id="XSP-0H-ajc"/>
+                    <connections>
+                        <outlet property="footPerMinute" destination="LIV-jZ-zJw" id="1Am-ga-fmo"/>
+                        <outlet property="kmPerHour" destination="SYC-vE-hFM" id="GrA-g4-6mu"/>
+                        <outlet property="metrePerSec" destination="Y1v-Bs-Fgo" id="6li-NN-CbR"/>
+                        <outlet property="milesPerHour" destination="63Z-Kn-R1z" id="AEg-hD-tDb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87u-au-xls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
