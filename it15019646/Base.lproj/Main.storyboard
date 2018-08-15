@@ -264,7 +264,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBi-hc-leH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBi-hc-leH">
                                 <rect key="frame" x="34" y="188" width="75" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4TU-3Z-eFf"/>
@@ -322,6 +322,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="8rJ-Kc-sve" eventType="editingDidBegin" id="2G4-Ld-LLq"/>
+                                    <action selector="metreValueChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="d4I-kD-MhX"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8DD-FX-23x">
                                 <rect key="frame" x="145" y="233" width="196" height="30"/>
@@ -331,6 +335,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="8rJ-Kc-sve" eventType="editingDidBegin" id="shl-3L-sjf"/>
+                                    <action selector="footValueChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="sJY-QH-gFI"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9n-gY-hyF">
                                 <rect key="frame" x="145" y="283" width="196" height="30"/>
@@ -340,6 +348,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="8rJ-Kc-sve" eventType="editingDidBegin" id="dzB-np-tlT"/>
+                                    <action selector="yardValueChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="yHa-NN-MMB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3i8-iv-iUk">
                                 <rect key="frame" x="145" y="333" width="196" height="30"/>
@@ -349,6 +361,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="8rJ-Kc-sve" eventType="editingDidBegin" id="m34-bU-3u2"/>
+                                    <action selector="kilometreValueChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="VBG-gi-763"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mnG-QJ-3hy">
                                 <rect key="frame" x="145" y="383" width="196" height="30"/>
@@ -358,6 +374,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="clearOnClick:" destination="8rJ-Kc-sve" eventType="editingDidBegin" id="iPe-Fe-xHa"/>
+                                    <action selector="mileValueChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="H3P-NS-ykk"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -391,6 +411,13 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Distance" id="rNO-0l-bAm"/>
+                    <connections>
+                        <outlet property="foot" destination="8DD-FX-23x" id="vTJ-dv-2HI"/>
+                        <outlet property="kilometre" destination="3i8-iv-iUk" id="aDw-LO-6hH"/>
+                        <outlet property="metre" destination="fyF-qI-3lB" id="7ik-Jk-iQP"/>
+                        <outlet property="mile" destination="mnG-QJ-3hy" id="thi-hS-Al4"/>
+                        <outlet property="yard" destination="h9n-gY-hyF" id="eNe-nk-Wba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
