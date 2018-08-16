@@ -35,7 +35,7 @@ class WeightViewController: UIViewController {
     
     @IBAction func kilogramValueChanged(_ sender: Any) {
         //input value is passed to weight controller's conversion method
-        weightValue.gramConversion((self.kilogram.text! as NSString).doubleValue)
+        weightValue.kilogramConversion((self.kilogram.text! as NSString).doubleValue)
         
         //now weightValue object contains converted values
         //assignValues method will be used to assign values to text boxes
@@ -44,7 +44,7 @@ class WeightViewController: UIViewController {
     
     @IBAction func poundValueChanged(_ sender: Any) {
         //input value is passed to weight controller's conversion method
-        weightValue.gramConversion((self.pound.text! as NSString).doubleValue)
+        weightValue.poundConversion((self.pound.text! as NSString).doubleValue)
         
         //now weightValue object contains converted values
         //assignValues method will be used to assign values to text boxes
@@ -53,7 +53,7 @@ class WeightViewController: UIViewController {
     
     @IBAction func ounceValueChanged(_ sender: Any) {
         //input value is passed to weight controller's conversion method
-        weightValue.gramConversion((self.ounce.text! as NSString).doubleValue)
+        weightValue.ounceConversion((self.ounce.text! as NSString).doubleValue)
         
         //now weightValue object contains converted values
         //assignValues method will be used to assign values to text boxes

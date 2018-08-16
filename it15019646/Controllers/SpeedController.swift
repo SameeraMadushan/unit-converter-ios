@@ -26,10 +26,10 @@ class SpeedController {
     
     //convert feetPerMin values to other units(first textbox)
     func feetPerMinConversion(_ feetPerMin: Double){
-        self.meterPerSec = feetPerMin*18.288
+        self.meterPerSec = feetPerMin*0.00508
         self.feetPerMin = feetPerMin
-        self.kmPerHr = feetPerMin*65.8368
-        self.milesPerHr = feetPerMin*40.9091
+        self.kmPerHr = feetPerMin*0.018288
+        self.milesPerHr = feetPerMin*0.0113636
     }
     
     //convert kmPerHr values to other units(first textbox)
@@ -43,7 +43,7 @@ class SpeedController {
     //convert milesPerHr values to other units(first textbox)
     func milesPerHrConversion(_ milesPerHr: Double){
         self.meterPerSec = milesPerHr*0.44704
-        self.feetPerMin = milesPerHr*88.0002
+        self.feetPerMin = milesPerHr*88
         self.kmPerHr = milesPerHr*1.60934
         self.milesPerHr = milesPerHr
     }
